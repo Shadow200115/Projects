@@ -1,0 +1,684 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script src="https://kit.fontawesome.com/35fad309f6.js" crossorigin="anonymous"></script>
+
+        
+        <style>
+            html::-webkit-scrollbar {
+                display: none;
+            }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                width: 100%;
+                background: #fff;
+                position: relative;
+                font-family: roboto, sans-serif;
+            }
+            .topbar{
+                width: 100%;
+                height: 65px;
+                position: relative;
+                top: 0;
+                left: 0px;
+                padding: 0 4%;
+                background: #333545;
+                z-index: 9;
+                display: flex;
+                align-items: center;
+            }
+
+            #logo{
+                height: 42px;
+                margin-left: 73px;
+                padding-right: 10px;
+            }
+
+            .input {
+                height: 36px;
+                width: 40%;
+                position: relative;
+                background-color: white;
+                justify-content: space-between;
+                align-items: center;
+                border-radius: 4px;
+                display: flex;
+            }
+
+            #searchbar {
+                width: 93%;
+                height: 30px;
+                border-color: transparent;
+                outline-color: transparent;
+                font-size: 13.9px;
+                color: #b1aead;
+                opacity: 90%;
+                font-weight: 520;
+            }
+
+            #search{
+                font-size: 20px;
+                padding-left: 12px;
+                color: #858585;
+                width: 16px;
+            }
+
+            .right-container {
+                display: flex;
+                margin-left: auto;
+            }
+
+            #Dropdown{
+                background-color: #333545;
+                position: relative;
+                text-decoration: none;
+                color: #c7cacb;
+                font-size: 14px;
+                margin-right: 18px;
+                top: 0px;
+                border: none;
+                justify-content: center;
+                }
+
+            #dropdown:hover{
+                color: white;
+            }
+
+            .signin {
+                position: relative;
+                width: 65px;
+                height: 25px;
+                margin-right: 9px;
+                border-radius: 4px;
+                font-size: 12px;
+                top: 0px;
+                color: #fff;
+                background-color: #f84464;
+                border: #f84464;
+            }
+            #menu{
+                position: relative;
+                padding-right: 94px;
+                color: #f6f2e5;
+                font-size: 25px;
+                top: 0px;
+                left: 20px;
+            }
+            
+            .secondnav{
+                position: relative;
+                width: 100%;
+                height: 40px;
+                display: flex;
+                justify-content: space-between;
+                background-color: #222539;
+            }
+            .secondnavleftitems{
+                position: relative;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                left: 138px;
+                padding-top: 10px;
+            }
+            #leftitems{
+                display: inline;
+                text-decoration: none;
+                color: #c8c8c3;
+                font-size: 14px;
+                padding: 8px;
+            }
+            #leftitems:hover{
+                color: white;
+            }
+
+            .secondnavrightitems{
+                position: relative;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                right: 136px;
+                padding-top: 10px
+            }
+
+            #rightitems{
+                display: inline;
+                text-decoration: none;
+                color: white;
+                font-size: 12px;
+                padding: 10px;
+            }
+
+            #rightitems:hover{
+                color: white;
+            }
+
+            .main{
+                max-width: 100%;
+    position: relative;
+    height: 300px;
+    padding: 0px 0px;
+    overflow-x: hidden;
+    margin-top: 10px;
+            }
+
+            .advertise {
+                display: flex;
+    width: 80%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    animation: slideAnimation 20s linear infinite;
+}
+
+            .slider {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    transition:1s;
+    overflow: hidden;
+    
+}
+
+.slider img {
+    width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+}
+
+@keyframes slideAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* Adjust based on the width of one slide */
+    }
+}
+
+            #adv{
+                border-radius: 10px;
+                max-width:90% ;
+                margin-top: 40px;
+                margin-left: 70px;        
+            }
+
+            .title {
+                color: #000;
+                opacity: 0.9;
+                padding-left: 147px;
+                padding-top: 40px;
+                text-transform: capitalize;
+                font-size: 22px;
+                font-weight: 600;
+                margin-top:-14px;
+                margin-left: -70px;
+            }
+
+            .movies-list {
+    width: 94%;
+    height: 500px;
+    position: relative;
+    padding-top: 0;
+    padding-left: 105px;
+}
+
+
+.movie {
+    position: relative;
+    width: 100%;
+}
+
+.card-container {
+    position: relative;
+    width: 95%;
+    padding-left: 10px;
+    height: 480px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: visible;
+    scroll-behavior: smooth;
+}
+
+.card-container::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    position: relative;
+    min-width: 225px;
+    width: 225px;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 30px;
+}
+
+.card-img {
+    width: 100%;
+    height: 95%;
+    object-fit: cover;
+}
+
+.card-body {
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    bottom: 0;
+    background: #000;
+    padding: 10px;
+    display: flex;
+}
+
+.card-body p {
+    color: #fff;
+    position: absolute;
+    font-size: 16px;
+    padding-left: 30px;
+    top: 7px;
+}
+
+#heart {
+    color: #c4242b;
+    font-size: 20px;
+    margin-top: -3px;
+}
+
+.movie h3 {
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.detail {
+    font-size: 15px;
+    color: #b1aead;
+}
+            .banner img{
+                border-radius: 10px;
+                max-width:90% ;
+                margin-top: 40px;
+                margin-left: 70px; 
+            }
+
+            .container1 h2{
+                text-align: left;
+                padding: 22px;
+            }
+
+            .container1 .card1{
+                display: flex;
+                justify-content: center;
+                justify-content: space-around;
+
+            }
+            .card1 img{
+                width: 17%;
+                margin-block: 15px;
+                border-radius: 5px;
+            }
+
+            .premiere{
+                background-color: rgb(8, 8, 19);
+                color: white;
+                padding: 33px;
+                margin-top: 44px;
+            }
+
+            .card2 img{
+                width: 80%;
+            }
+
+            #p1{
+                margin-top: 10px;
+                margin-left: -20px;
+            }
+            #p2{
+                margin-top: -15px;
+                font-size:medium;
+            }
+            
+            
+
+            .footer{
+                background-color: #333545;
+                padding: 33px;
+                margin-top: 44px;
+            }
+
+            .footer img{
+                width: 14%;
+                margin-left: 43%;
+                margin-top: -20px;
+            }
+            .footer .icon{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+
+            }
+            .icon i{
+                margin-inline: 15px;
+                font-size: 30px;
+                color: #5D5D5F;
+                margin-top: 30px;
+                
+                
+            }
+            .icon i:hover{
+                color: white;
+            }
+
+            .copy{
+                padding: 30px;
+    font-size: 11px;
+    color: rgb(102, 102, 102);
+    text-align: center;
+            }
+
+            .line1{
+                width: 45%;
+                flex: 1 1 0%;
+    height: 1px;
+    background: rgb(93, 93, 95);
+    margin-top: 35px;
+    margin-left: -32px;
+            }
+
+            .line2{
+                width: 44%;
+                flex: 1 1 0%;
+    height: 1px;
+    background: rgb(93, 93, 95);
+    margin-top: -26px;
+    margin-left: 59%;
+
+            }
+
+            .show{
+                display: flex;
+                margin-top: 30px;
+                margin-bottom: 6px;
+                
+            }
+            .t1{
+                margin-left: 7px;
+                color: white;
+                font-weight: bolder;
+                font-size: medium;
+                margin-top: -35px;
+            }
+            .t2{
+                margin-left: 20px;
+                color: white;
+                margin-top: -35px;
+            }
+
+            #ic1{
+                color: white;
+                margin-top: -40px;
+            }
+
+            .btttn{
+                flex: 0 0 auto;
+    background-color: rgb(236, 94, 113);
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-left: 20%;
+    margin-top: -36px;
+    margin-bottom: 8px;
+            }
+
+            .contact{
+                background-color: #404043;
+                height: 120px;
+                width: 1279px;
+                margin-left: -33px;
+            }
+
+            .ion1{
+                display: flex;
+                color: rgba(128, 128, 128, 0.592);
+            }
+            #ion2:hover{
+                color: white;
+            }
+            #ion2{
+                margin-left: 250px;
+                justify-content: space-around;
+                margin-top: 50px;
+            }
+
+            .ion1 h5{
+                margin-top: 80px;
+                margin-left: -90px;
+                color: grey;
+            }
+
+            
+        </style>
+        <title>
+            Bookmyshow
+        </title>
+    </head>
+    <body>
+        <nav class="topbar">
+            <img src="C:\Users\Lenovo\Desktop\images\logo.png" id="logo">
+           <div class="input">
+            <span class="material-symbols-outlined" id="search">
+                search
+                </span>
+            <input type="text" id="searchbar" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search for Movies, Events, Plays, Sports, and Activities">
+            </div>
+            <div class="right-container">
+            <select id="Dropdown"><option>Bangalore</option></select>
+            <button class="signin">Signin</button>
+            <!-- <a href="#" id="btn">Sign in</a> -->
+            <span class="material-symbols-outlined" id="menu">
+                menu
+                </span>
+            </div>
+            </nav>
+            <div class="secondnav">
+                <ul class="secondnavleftitems">
+                <li id="leftitems">Movies</li>
+                <li id="leftitems">Stream</li>
+                <li id="leftitems">Events</li>
+                <li id="leftitems">Plays</li>
+                <li id="leftitems">Sports</li>
+                <li id="leftitems">Activities</li>
+                <li id="leftitems">Buzz</li>
+            </ul>
+            <ul class="secondnavrightitems">
+                <li id="rightitems">ListYourshow</li>
+                <li id="rightitems">Corporates</li>
+                <li id="rightitems">Offers</li>
+                <li id="rightitems">Giftscard</li>
+            </ul>
+            </div>
+            <div class="main">
+                <div class="advertise">
+                    <div class="slider">
+                    <img src="C:\Users\Lenovo\Desktop\images\adv1.jpg">
+                </div>
+                <div class="slider">
+                    <img src="C:\Users\Lenovo\Desktop\images\02.jpg">
+                </div>
+                <div class="slider">
+                    <img src="C:\Users\Lenovo\Desktop\images\03.jpg">
+                </div>
+                <div class="slider">
+                    <img src="C:\Users\Lenovo\Desktop\images\04.jpg">
+                </div>
+                <div class="slider">
+                    <img src="C:\Users\Lenovo\Desktop\images\05.jpg">
+                </div>
+
+                </div>
+                
+            </div>
+            <div>
+                <img src="C:\Users\Lenovo\Desktop\images\add.png" id="adv">
+            </div>
+            <div class="container">
+                <h1 class="title">Recommend movies</h1>
+                <div class="movie-list">
+                <div class="card-container">
+
+                    <div class="movie">
+                        <div class="card">
+                            <img src="C:\Users\Lenovo\Desktop\images\jailer.png" class="card-img" alt="">
+                            <div class="card-body">
+                                <i class="fa-solid fa-heart" id="heart"></i>
+                                <p>93% &ThinSpace; 339.1K votes</p>
+                            </div>
+                    </div>
+                        <h3>Jailer</h3>
+                        <p class="detail">Action/Drama/Thriller</p>
+                    </div>
+                    <div class="movie">
+                        <div class="card">
+                            <img src="C:\Users\Lenovo\Desktop\images\toby.jpg" class="card-img" alt="">                            <div class="card-body">
+                                <i class="fa-solid fa-heart" id="heart"></i>
+                                <p>63% &ThinSpace; 39.1K votes</p>
+                            </div>
+                    </div>
+                        <h3>Toby</h3>
+                        <p class="detail">Crime/Drama/Thriller</p>
+                    </div>
+                    <div class="movie">
+                        <div class="card">
+                            <img src="C:\Users\Lenovo\Desktop\images\kousalya.jpg" class="card-img" alt="">
+                            <div class="card-body">
+                                <i class="fa-solid fa-heart" id="heart"></i>
+                                <p>77% &ThinSpace; 33.1K votes</p>
+                            </div>
+                    </div>
+                        <h3>Kousalya</h3>
+                        <p class="detail">Action/Drama</p>
+                    </div>
+                    <div class="movie">
+                        <div class="card">
+                            <img src="C:\Users\Lenovo\Desktop\images\arjuna.png" class="card-img" alt="">
+                            <div class="card-body">
+                                <i class="fa-solid fa-heart"id="heart"></i>
+                                <p>63% &ThinSpace; 39.5K votes</p>
+                            </div>
+                    </div>
+                        <h3>Arjuna</h3>
+                        <p class="detail">Action/Drama/Thriller</p>
+                    </div>
+                    <div class="movie">
+                        <div class="card">
+                            <img src="C:\Users\Lenovo\Desktop\images\2012.png" class="card-img" alt="">
+                            <div class="card-body">
+                                <i class="fa-solid fa-heart" id="heart"></i>
+                                <p>73% &ThinSpace; 45.1K votes</p>
+                            </div>
+                    </div>
+                        <h3>2012</h3>
+                        <p class="detail">Action/Drama/Thriller</p>
+                    </div>
+
+                </div>
+                </div>
+            </div>
+
+            <div class="banner">
+                <img src="C:\Users\Lenovo\Desktop\images\adv2.png" alt="">
+            </div>
+
+            <div class="container1">
+                <h2>The Best Of Live Events</h2>
+                <div class="card1">
+                    <img src="C:\Users\Lenovo\Desktop\images\21.png" alt="">
+                    <img src="C:\Users\Lenovo\Desktop\images\22.png" alt="">
+                    <img src="C:\Users\Lenovo\Desktop\images\23.png" alt="">
+                    <img src="C:\Users\Lenovo\Desktop\images\24.jpg" alt="">
+                    <img src="C:\Users\Lenovo\Desktop\images\25.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="premiere">
+                <h1>PREMIERE</h1>
+                <div class="container1">
+                    <h2 id="p1">Premieres</h2>
+                    <h3 id="p2">Brand new releases every Friday</h3>
+                    <div class="card1">
+                        <div class="card2">
+                        <img src="C:\Users\Lenovo\Desktop\images\31.jpg" alt="">
+                        <h3>Somewhere in Queens</h3>
+                        <p class="detail">English</p>
+                    </div>
+                    <div class="card2">
+                        <img src="C:\Users\Lenovo\Desktop\images\32.jpg" alt="">
+                        <h3>Sun moon</h3>
+                        <p class="detail">Engish</p>
+                    </div>
+                    <div class="card2">
+                        <img src="C:\Users\Lenovo\Desktop\images\33.jpg" alt="">
+                        <h3>Silent forest</h3>
+                        <p class="detail">English</p>
+                    </div>
+
+                    <div class="card2">
+                        <img src="C:\Users\Lenovo\Desktop\images\34.jpg" alt="">
+                        <h3>Molcar</h3>
+                        <p class="detail">Japanese</p>
+                    </div>
+                    <div class="card2">
+                        <img src="C:\Users\Lenovo\Desktop\images\35.jpg" alt="">
+                        <h3>Fine morning</h3>
+                        <p class="detail">French</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="show">
+                    <span class="material-symbols-outlined" id="ic1">
+                        festival
+                        </span>
+                        <div class="t1">List Your Show</div>
+                        <div class="t2">Got a show, event, activity or a great experience? Partner with us & get listed on BookMyShow</div>
+                        <a href="#" class="btttn">Contact Today!</a>
+                </div>
+                <div class="contact">
+                    <div class="ion1">
+                        <i class="fa-solid fa-headset fa-2xl" id="ion2"></i>
+                            <h5>24/7 Customer Care</h5>
+                            <i class="fa-solid fa-ticket fa-2xl" id="ion2"></i>
+                            <h5>Resend booking confirmation</h5>
+                            <i class="fa-solid fa-envelope-open-text fa-2xl" id="ion2"></i>
+                            <h5>Subscribe To Newsletter</h5>
+                    </div>
+                </div>
+                <div></div>
+                <div class="line1"></div>
+                <img src="C:\Users\Lenovo\Desktop\images\logo.png" id="l1" alt="">
+                <div class="line2"></div>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-square-instagram"></i>
+                    <i class="fa-brands fa-square-x-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+                <div class="copy">Copyright @ 2023  © Bigtree Entertainment Pvt. Ltd. All Rights Reserved. <br>The content and images used on this site are copyright protected and copyrights vests with the respective owners. The usage of the content and images on this website is intended to promote the works and no endorsement of the artist shall be implied. Unauthorized use is prohibited and punishable by law.
+                </div>
+            </div>
+        </body>
+</html>
